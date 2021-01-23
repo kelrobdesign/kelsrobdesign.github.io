@@ -5,7 +5,7 @@
 		Server-side data validation is also added for good data validation.
 	*/
 	
-	$data['error'] = false;
+
 	
 	$name = $_POST['name'];
 	$email = $_POST['email'];
