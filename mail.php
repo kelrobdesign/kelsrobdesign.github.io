@@ -5,7 +5,7 @@
 		Server-side data validation is also added for good data validation.
 	*/
 	
-
+	$data['error'] = false;
 	
 	$name = $_POST['name'];
 	$email = $_POST['email'];
@@ -20,6 +20,9 @@
 		$data['error'] = 'Please enter your subject.';
 	}else if( empty($message) ){
 		$data['error'] = 'The message field is required!';
+	}else{
+		
+		$formcontent="From: $name\nSubject: $subject\nEmail: $email\nMessage: $message";
 		
 		
 		//Place your Email Here
@@ -29,6 +32,9 @@
 		
 		if( mail($recipient, $name, $formcontent, $mailheader) == false ){
 			$data['error'] = 'Sorry, an error occured!';
+		}else{
+			$data['error'] = false;
+		}
 	
 	}
 	
