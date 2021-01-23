@@ -20,9 +20,6 @@
 		$data['error'] = 'Please enter your subject.';
 	}else if( empty($message) ){
 		$data['error'] = 'The message field is required!';
-	}else{
-		
-		$formcontent="From: $name\nSubject: $subject\nEmail: $email\nMessage: $message";
 		
 		
 		//Place your Email Here
