@@ -32,9 +32,6 @@
 		
 		if( mail($recipient, $name, $formcontent, $mailheader) == false ){
 			$data['error'] = 'Sorry, an error occured!';
-		}else{
-			$data['error'] = false;
-		}
 	
 	}
 	
