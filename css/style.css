@@ -1425,3 +1425,48 @@ body.loaded #preloader .loader{
 }
 
 * {box-sizing:border-box}
+
+
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline-block;
+  font-size: 14px;
+	font-weight:500;
+ 	color: #89B0AE;
+	text-decoration:none;
+	text-transform:uppercase;
+	letter-spacing:4px;
+	padding:15px 0;
+	margin:-15px 0;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+
+  	color:rgba(0,0,0,.4);
+  text-decoration: none;
+  text-transform:uppercase;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: black;
+}
+
+
+
